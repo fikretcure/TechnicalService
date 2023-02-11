@@ -30,8 +30,6 @@ class DeviceController extends Controller
      */
     public function index(): JsonResponse
     {
-
-
         return $this->success($this->base_repository->index())->send();
     }
 
@@ -65,6 +63,10 @@ class DeviceController extends Controller
         return $this->success($this->base_repository->update($request->validated(), $id))->send();
     }
 
+    /**
+     * @param $id
+     * @return JsonResponse
+     */
     public function destroy($id): JsonResponse
     {
         return $this->success($this->base_repository->destroy($id))->send();
