@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->string("name");
             $table->string("imei");
             $table->string("reg_code");
+            $table->string("desc");
             $table->integer("user_id");
             $table->softDeletes();
             $table->timestamps();
