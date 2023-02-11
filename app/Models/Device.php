@@ -19,7 +19,8 @@ class Device extends Model
         "name",
         "imei",
         "reg_code",
-        "user_id"
+        "user_id",
+        "desc"
     ];
 
 
