@@ -39,8 +39,6 @@ class DeviceController extends Controller
      */
     public function store(DeviceStoreRequest $request): JsonResponse
     {
-
-
         return $this->success($this->base_repository->store($request->validated()))->send();
     }
 
