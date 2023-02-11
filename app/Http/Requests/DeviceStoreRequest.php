@@ -40,6 +40,9 @@ class DeviceStoreRequest extends FormRequest
                 "required",
                 "integer",
                 (new ServiceExistsRule(env("AUTH_SERVICE_URL") . "users", $this->user_id))
+            ],
+            "desc" => [
+                "string",
             ]
         ];
     }
